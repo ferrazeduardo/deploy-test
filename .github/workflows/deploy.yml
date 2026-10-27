@@ -1,0 +1,23 @@
+name: Deploy aplicacao
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Baixar o código
+              uses: actions/checkout@v4
+
+            - name: codigo baixado
+              run: echo "código ja baixado"
+
+            - name: Codigo Rodando
+              run: echo "codigo rodando"
+
+            - name: Deploy com sucesso
+              run: echo "deploy com sucesso"
+        

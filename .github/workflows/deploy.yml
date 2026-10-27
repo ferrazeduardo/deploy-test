@@ -21,6 +21,15 @@ jobs:
             - name: Deploy com sucesso
               run: echo "deploy com sucesso"
 
+            - name: ver arquivos baixados
+              run: ls -la
+
+            - name: Multiplos comandos
+              run: |
+                echo "comando 1"
+                pwd
+                
+
     deploy2:
         runs-on: ubuntu-latest
         steps:
